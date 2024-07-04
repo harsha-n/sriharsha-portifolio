@@ -4,15 +4,17 @@ import { FaHome, FaUser, FaFolder, FaEnvelope } from 'react-icons/fa'
 import { BsStack } from "react-icons/bs";
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation';
 
 const MotionBox = motion(Box)
 
 const NavBar = ({ activeSection , setActiveSection }: { activeSection: string; setActiveSection: Function } ) => {
+  const router = useRouter();
   const navItems = [
-    { icon: FaHome, section: 'home' },
-    { icon: FaUser, section: 'profile' },
+    { icon: FaHome, section: '/' },
+    { icon: FaUser, section: 'about' },
     { icon: FaFolder, section: 'projects' },
-    { icon: BsStack  , section: 'Skills' },
+    { icon: BsStack  , section: 'experiences' },
     // { icon: FaEnvelope, section: 'contact' },
   ]
 
@@ -32,7 +34,7 @@ const NavBar = ({ activeSection , setActiveSection }: { activeSection: string; s
           <Box
             key={index}
             as="button"
-            onClick={() => setActiveSection(item.section)}
+            onClick={() => {setActiveSection(item.section); router.push(item.section)}}
             position="relative"
           >
             <MotionBox
@@ -56,8 +58,8 @@ const NavBar = ({ activeSection , setActiveSection }: { activeSection: string; s
                   width: '5px',
                   height: '5px',
                   borderRadius: '50%',
-                  backgroundColor: 'white',
-                  transform: 'translateX(-50%)',
+                  backgroundColor: '#4789e1',
+                  // transform: 'translateX(-50%)',
                 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 30 }}
               />
