@@ -83,7 +83,7 @@ const Projects = () => {
   ];
 
   return (
-    <VStack spacing={8} align="stretch" w="full" maxW="4xl" mx="auto">
+    <VStack spacing={8} mt={10} align="stretch" w="full" maxW="4xl" mx="auto">
       <Heading as="h2" size="2xl" textAlign="center" mb={8}>
         Projects
       </Heading>
