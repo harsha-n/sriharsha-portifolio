@@ -34,7 +34,7 @@ const Home = ({ name, title }: { name: string; title: string }) => {
       case 'home':
         return (
           <VStack spacing={8} align="center" textAlign="center" justify="center">
-            <Heading as="h1" size="2xl">Hello, I'm</Heading>
+            <Heading as="h1" size="2xl">{"Hello, I'm"}</Heading>
             <Heading as="h2" size="3xl">{name}</Heading>
             <Text fontSize="xl">{title}</Text>
             <Profile />
