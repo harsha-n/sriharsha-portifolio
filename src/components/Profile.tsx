@@ -14,7 +14,7 @@ const Profile = () => (
       bg="blue.500"
     >
       <Image
-        src={"/images/profile.jpg"}
+        src={"/images/profile_1.jpg"}
         alt="Profile"
         width={200}
         height={200}
