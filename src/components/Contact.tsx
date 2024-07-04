@@ -1,11 +1,11 @@
 // components/Contact.tsx
 import { VStack, Heading, FormControl, FormLabel, Input, Textarea, Button } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+import { FormEventHandler } from 'react'
 
 const MotionVStack = motion(VStack)
-
 const Contact = () => {
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault()
     // Handle form submission
   }

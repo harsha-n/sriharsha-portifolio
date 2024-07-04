@@ -11,14 +11,20 @@ import {
 import { motion } from "framer-motion";
 
 const MotionBox = motion(Box);
-
+interface ProjectCard {
+  title: string;
+  description: string;
+  imageUrl: string;
+  projectUrl: string;
+  logobg?: string
+}
 const ProjectCard = ({
   title,
   description,
   imageUrl,
   projectUrl,
   logobg = "transparent",
-}) => (
+} : ProjectCard) => (
   <MotionBox
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}

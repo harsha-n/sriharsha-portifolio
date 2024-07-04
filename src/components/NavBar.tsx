@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const MotionBox = motion(Box)
 
-const NavBar = ({ activeSection, setActiveSection }) => {
+const NavBar = ({ activeSection , setActiveSection }: { activeSection: string; setActiveSection: Function } ) => {
   const navItems = [
     { icon: FaHome, section: 'home' },
     { icon: FaUser, section: 'profile' },
