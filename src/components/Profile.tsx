@@ -1,6 +1,6 @@
 // components/Profile.tsx
-import Image from "next/image";
-import { Box } from "@chakra-ui/react";
+// import Image from "next/image";
+import { Box, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const MotionBox = motion(Box);
@@ -18,7 +18,6 @@ const Profile = () => (
         alt="Profile"
         width={200}
         height={200}
-        layout="responsive"
         loading="lazy"
       />
     </MotionBox>
