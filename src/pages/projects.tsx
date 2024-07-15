@@ -16,7 +16,7 @@ interface ProjectCard {
   description: string;
   imageUrl: string;
   projectUrl: string;
-  logobg?: string
+  logobg?: string;
 }
 const ProjectCard = ({
   title,
@@ -24,7 +24,7 @@ const ProjectCard = ({
   imageUrl,
   projectUrl,
   logobg = "transparent",
-} : ProjectCard) => (
+}: ProjectCard) => (
   <MotionBox
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
@@ -54,7 +54,8 @@ const ProjectCard = ({
     </Box>
   </MotionBox>
 );
-
+//Akorbi Adapt
+//
 const Projects = () => {
   const projects = [
     {
@@ -66,17 +67,35 @@ const Projects = () => {
       logobg: "yellow",
     },
     {
+      title: "AmplifyMD",
+      description: `AmplifyMD is the leading virtual care solution for hospitals looking to deliver integrated virtual 
+        care across specialties and care settings. Our unparalleled technology streamlines every virtual encounter,
+        making providers up to 2X more efficient.`,
+      imageUrl: "/images/AmplifyMD_Logo_Darker_Green_480x122_RGB.gif",
+      projectUrl: "",
+      logobg: "",
+    },
+    {
+      title: "Akorbi Adapt",
+      description: `ADAPT powered by Akorbi is a multimodal language services technology platform that allows 
+        clients to easily access interpretation services through phone, video or in-person scheduling, as 
+        well as document translation and localization services.`,
+      imageUrl: "/images/Akorbi.svg",
+      projectUrl: "",
+      logobg: "",
+    },
+    {
       title: "My Contacts Backend",
       description:
         "It's demo project built on Node.js covering concepts involving express, private and public routes, middleware authenticating jwt token, error Handler using Mongodb",
-      imageUrl:  "/images/mycontacts.png",
+      imageUrl: "/images/mycontacts.png",
       projectUrl: "https://github.com/harsha-n/mycontacts-backend",
     },
     {
       title: "React Chakra Demo",
       description:
         "A Demo Single Page Application built on React using Chakra UI.",
-      imageUrl:  "/images/chakra.png",
+      imageUrl: "/images/chakra.png",
       projectUrl: "https://github.com/harsha-n/react-chakra-demo",
     },
     // Add more projects here

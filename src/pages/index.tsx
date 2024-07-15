@@ -10,7 +10,7 @@ import SocialIcons from '../components/SocialIcons'
 const Home = ({ name, title }: { name: string; title: string }) => {
   const handleDownload = () => {
     // Use the public URL path for the PDF file
-    const pdfUrl = '/Sri Harsha Nistala_Resume.pdf';
+    const pdfUrl = '/SriHarsha-Nistala-Resume.pdf';
     
     // Create an anchor element and trigger the download
     const link = document.createElement('a');
